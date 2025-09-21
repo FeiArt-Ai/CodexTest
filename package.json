@@ -1,0 +1,17 @@
+{
+  "name": "three-fps-online",
+  "version": "1.0.0",
+  "description": "A minimal Three.js-based FPS demo with basic online multiplayer",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

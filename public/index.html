@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js Online FPS Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 初始覆蓋層：提示玩家如何進入場景並鎖定滑鼠指標 -->
+    <div id="overlay" class="overlay">
+      <h1>Neon Arena</h1>
+      <p>
+        Click the button below to lock the pointer, then use
+        <strong>WASD</strong> to move and <strong>Space</strong> to jump.
+      </p>
+      <p>
+        點擊下方按鈕鎖定滑鼠指標後，即可使用 <strong>WASD</strong> 移動並以
+        <strong>Space</strong> 跳躍。
+      </p>
+      <button id="startButton">Enter Arena</button>
+      <p class="small">Open the page in another tab to see multiplayer.</p>
+      <p class="small">想體驗多人同步？請再開一個分頁或邀請朋友加入。</p>
+      <p id="connectionStatus" class="status">Connecting...</p>
+    </div>
+    <!-- 遊戲進行中的 HUD：包含準心、玩家數量與操作提示 -->
+    <div id="hud" class="hud hidden">
+      <div class="crosshair"></div>
+      <div id="playerCount" class="player-count">Players: 0</div>
+      <div id="info" class="info"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
